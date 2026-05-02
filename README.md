@@ -1,4 +1,4 @@
-# 🎓 RAG-BASED-AI-TEACHING-ASSISTANT
+#  RAG-BASED-AI-TEACHING-ASSISTANT
 
 > Ask any question about your course and get directed to the **exact video and timestamp** where it's taught.
 
