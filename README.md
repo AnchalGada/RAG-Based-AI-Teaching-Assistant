@@ -4,7 +4,7 @@
 
 <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Ollama-Local%20LLM-black?style=for-the-badge&logo=ollama&logoColor=white"/>
-<img src="https://img.shields.io/badge/Whisper-Local%20STT-4A90D9?style=for-the-badge&logo=audiomack&logoColor=white"/>
+<img src="https://img.shields.io/badge/Whisper-Transcription-4A90D9?style=for-the-badge&logo=audiomack&logoColor=white"/>
 <img src="https://img.shields.io/badge/RAG-Powered-FF6B6B?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/100%25-Offline-00C851?style=for-the-badge"/>
 
