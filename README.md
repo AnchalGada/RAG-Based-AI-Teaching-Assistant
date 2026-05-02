@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 RAG-Based AI Teaching Assistant
+#  RAG-Based AI Teaching Assistant
 
 <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Ollama-Local%20LLM-black?style=for-the-badge&logo=ollama&logoColor=white"/>
