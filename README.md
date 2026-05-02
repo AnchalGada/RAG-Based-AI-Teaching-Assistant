@@ -4,7 +4,7 @@
 
 <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Ollama-Local%20LLM-black?style=for-the-badge&logo=ollama&logoColor=white"/>
-<img src="https://img.shields.io/badge/Whisper-OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/Whisper-Local%20STT-4A90D9?style=for-the-badge&logo=audiomack&logoColor=white"/>
 <img src="https://img.shields.io/badge/RAG-Powered-FF6B6B?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/100%25-Offline-00C851?style=for-the-badge"/>
 
@@ -42,26 +42,20 @@ The entire pipeline runs **locally on your machine** using Ollama — no OpenAI 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                        PIPELINE                             │
-│                                                             │
-│  📹 videos/          🎵 audios/         📄 jsons/           │
-│  Raw .mp4 files  ──► Numbered .mp3  ──► Transcript chunks   │
-│       │                   │                    │            │
-│  video_to_mp3.py    mp3_to_json.py     preprocess_json.py   │
-│   (ffmpeg)            (Whisper)          (bge-m3 embed)     │
-│                                               │             │
-│                                    💾 embeddings.joblib     │
-│                                               │             │
-│                                    process_incoming.py      │
-│                                  (cosine similarity +       │
-│                                      llama3.2 LLM)         │
-│                                               │             │
-│                                    💬 Answer + Timestamp    │
-└─────────────────────────────────────────────────────────────┘
+📹 videos/
+    │
+    ▼  video_to_mp3.py (ffmpeg)
+🎵 audios/
+    │
+    ▼  mp3_to_json.py (Whisper)
+📄 jsons/
+    │
+    ▼  preprocess_json.py (bge-m3 embeddings)
+💾 embeddings.joblib
+    │
+    ▼  process_incoming.py (cosine similarity + llama3.2)
+💬 Answer with Video Title & Timestamp
 ```
-
----
 
 ## 📂 Project Structure
 
