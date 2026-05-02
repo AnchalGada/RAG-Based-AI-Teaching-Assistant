@@ -167,12 +167,3 @@ You can customize the following inside the scripts:
 - `embeddings.joblib` is generated locally and should be added to `.gitignore` if large.
 - The system prompt is designed for web development courses but can be adapted for any subject by editing the prompt template in `process_incoming.py`.
 
----
-
-
-
----
-
-## 📄 License
-
-MIT License — feel free to use and adapt for your own courses.
